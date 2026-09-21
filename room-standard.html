@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard Room | Afro Lodges & Motels</title>
+<meta name="description" content="Standard Room at Afro Lodges & Motels — comfortable, affordable accommodation with a single or twin bed option, Wi-Fi and TV.">
+<link rel="canonical" href="https://astonishing-medovik-257b80.netlify.app/room-standard.html">
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-primary: #1E4D8C; --color-accent: #E08A4B; --color-accent-hover: #C97739;
+    --color-background: #FFFDF9; --color-text-primary: #1A1A1A; --color-text-muted: #8A8580; --color-text-heading: #1E2A3A;
+    --color-surface: #F5EFE4; --color-border: #EAE2D3; --color-dark-bg: #0F2340;
+    --font-display: 'Instrument Serif', serif; --font-heading: 'Libre Baskerville', serif; --font-body: 'Inter', sans-serif;
+    --radius-sm: 10px; --radius-md: 15px; --radius-lg: 30px;
+    --shadow-card: rgba(15,35,64,0.12) 0px 1px 2px -1px, rgba(15,35,64,0.10) 0px 3px 6px -3px, rgba(15,35,64,0.06) 0px 10px 26px -6px;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--font-body); color: var(--color-text-primary); background: var(--color-background); line-height: 1.2; }
+  img { max-width: 100%; display: block; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--color-primary); }
+  header { background: var(--color-dark-bg); padding: 16px 0; }
+  header .container { display: flex; align-items: center; justify-content: space-between; }
+  header .brand { display: flex; align-items: center; }
+  header .brand img { height: 40px; }
+  header .back { color: #C9D6E8; text-decoration: none; font-size: 13px; font-weight: 600; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; padding: 14px 28px; border-radius: var(--radius-md); cursor: pointer; text-decoration: none; border: none; min-height: 44px; transition: background-color 0.3s var(--ease-out), transform 0.18s var(--ease-out); }
+  .btn-primary { background: var(--color-accent); color: #fff; }
+  .btn-primary:hover { background: var(--color-accent-hover); transform: scale(1.03); }
+  main { padding: 48px 0 80px; }
+  .room-hero { display: grid; grid-template-columns: 1fr 380px; gap: 40px; margin-bottom: 48px; }
+  .room-carousel { position: relative; aspect-ratio: 4/3; border-radius: var(--radius-md); overflow: hidden; background: var(--color-surface); box-shadow: var(--shadow-card); }
+  .carousel-track { display: flex; height: 100%; transition: transform 0.5s var(--ease-out); }
+  .carousel-track > div { min-width: 100%; height: 100%; }
+  .carousel-track img { width: 100%; height: 100%; object-fit: cover; }
+  .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; border: none; cursor: pointer; background: rgba(15,35,64,0.55); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .carousel-btn:hover { background: var(--color-accent); }
+  .carousel-prev { left: 16px; } .carousel-next { right: 16px; }
+  .carousel-dots { position: absolute; bottom: 16px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px; }
+  .carousel-dots button { width: 7px; height: 7px; border-radius: 50%; border: none; background: rgba(255,255,255,0.5); cursor: pointer; padding: 0; }
+  .carousel-dots button.active { background: #fff; width: 20px; border-radius: 4px; }
+  .carousel-caption { position: absolute; top: 16px; left: 16px; background: rgba(15,35,64,0.65); color: #fff; font-size: 11px; font-weight: 600; padding: 5px 12px; border-radius: 20px; }
+  .room-info { display: flex; flex-direction: column; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent); font-weight: 700; margin-bottom: 12px; }
+  h1 { font-family: var(--font-display); font-size: 40px; color: var(--color-text-heading); margin-bottom: 16px; line-height: 1.15; }
+  .desc { font-size: 15px; color: var(--color-text-muted); line-height: 1.65; margin-bottom: 24px; }
+  .price-row { display: flex; gap: 24px; padding: 20px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); margin-bottom: 24px; }
+  .price-item .amount { font-family: var(--font-heading); font-size: 28px; color: var(--color-primary); display: block; }
+  .price-item .label { font-size: 11px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .amenities-full { list-style: none; margin-bottom: 28px; flex: 1; }
+  .amenities-full li { font-size: 14.5px; padding: 8px 0; padding-left: 24px; position: relative; border-bottom: 1px solid var(--color-border); }
+  .amenities-full li:last-child { border-bottom: none; }
+  .amenities-full li::before { content: '✓'; position: absolute; left: 0; color: var(--color-accent); font-weight: 700; }
+  .note { font-size: 12.5px; color: var(--color-text-muted); margin-top: -12px; margin-bottom: 20px; }
+  .back-link { display: inline-block; margin-bottom: 24px; font-size: 13px; font-weight: 600; text-decoration: none; color: var(--color-text-muted); }
+  .back-link:hover { color: var(--color-primary); }
+  footer { background: var(--color-dark-bg); color: #fff; padding: 32px 0; text-align: center; margin-top: 40px; }
+  footer p { font-size: 12px; color: #C9D6E8; }
+  footer a { color: #fff; }
+  @media (max-width: 809px) { .room-hero { grid-template-columns: 1fr; } h1 { font-size: 32px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="brand"><img src="images/logo-full.png" alt="Afro Lodges & Motels"></a>
+    <a href="index.html#rooms" class="back">&larr; All Rooms</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <a href="index.html#rooms" class="back-link">&larr; Back to all rooms</a>
+
+    <div class="room-hero">
+      <div class="room-carousel" data-carousel>
+        <span class="carousel-caption" data-caption-el>Single bed</span>
+        <div class="carousel-track" data-track>
+          <div><img src="images/room-standard-a.jpg" alt="Standard Room, single bed configuration" data-caption="Single bed"></div>
+          <div><img src="images/room-standard-b.jpg" alt="Standard Room, alternate view" data-caption="Single bed"></div>
+          <div><img src="images/room-standard-twin.jpg" alt="Standard Room, twin bed configuration" data-caption="Twin beds"></div>
+          <div><img src="images/room-standard-4.jpg" alt="Standard Room, additional view" data-caption="Single bed"></div>
+        </div>
+        <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+        <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+        <div class="carousel-dots" data-dots></div>
+      </div>
+
+      <div class="room-info">
+        <p class="eyebrow">Afro Lodges &amp; Motels</p>
+        <h1>Standard Room</h1>
+        <p class="desc">A comfortable and affordable room for guests looking for a convenient, relaxing stay — available with a single bed or twin beds. Sleeps up to 2 guests.</p>
+        <div class="price-row">
+          <div class="price-item"><span class="amount">$35</span><span class="label">Single</span></div>
+          <div class="price-item"><span class="amount">$45</span><span class="label">2 Sharing</span></div>
+        </div>
+        <ul class="amenities-full">
+          <li>Single or twin bed option</li>
+          <li>Television</li>
+          <li>High-speed Wi-Fi</li>
+          <li>Essential room amenities</li>
+        </ul>
+        <p class="note">Rate does not include breakfast.</p>
+        <a href="index.html?book=Standard%20Room#rooms" class="btn btn-primary">Book This Room</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; Afro Lodges &amp; Motels &middot; <a href="index.html">Back to homepage</a></p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll("[data-carousel]").forEach(function (carousel) {
+    const track = carousel.querySelector("[data-track]");
+    const slides = Array.from(track.children);
+    const dotsWrap = carousel.querySelector("[data-dots]");
+    const captionEl = carousel.querySelector("[data-caption-el]");
+    const prevBtn = carousel.querySelector(".carousel-prev");
+    const nextBtn = carousel.querySelector(".carousel-next");
+    let index = 0;
+    slides.forEach(function (_, i) {
+      const dot = document.createElement("button");
+      if (i === 0) dot.classList.add("active");
+      dot.addEventListener("click", function () { goTo(i); });
+      dotsWrap.appendChild(dot);
+    });
+    const dots = Array.from(dotsWrap.children);
+    function updateCaption() { const img = slides[index].querySelector("img"); if (img && captionEl) captionEl.textContent = img.getAttribute("data-caption") || ""; }
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      track.style.transform = "translateX(-" + (index * 100) + "%)";
+      dots.forEach(function (d, di) { d.classList.toggle("active", di === index); });
+      updateCaption();
+    }
+    prevBtn.addEventListener("click", function () { goTo(index - 1); });
+    nextBtn.addEventListener("click", function () { goTo(index + 1); });
+    updateCaption();
+    let startX = 0, dx = 0;
+    track.addEventListener("touchstart", function (e) { startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener("touchmove", function (e) { dx = e.touches[0].clientX - startX; }, { passive: true });
+    track.addEventListener("touchend", function () { if (Math.abs(dx) > 40) goTo(index + (dx < 0 ? 1 : -1)); dx = 0; });
+  });
+</script>
+
+</body>
+</html>
